@@ -1,4 +1,4 @@
-Id_produto,nome_produto,desc_produto,preco_produto,qtd_estoque,departamento
+id_produto,nome_produto,desc_produto,preco_produto,qtd_estoque,departamento
 1,ACARBOSE,50 MG,29.14,50,DIABETICOS
 2,ACARBOSE,100 MG,44.24,30,DIABETICOS
 3,BENZOATO DE ALOGLIPTINA,25MG,216.50,40,DIABETICOS

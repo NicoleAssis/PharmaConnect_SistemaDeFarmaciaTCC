@@ -1,0 +1,8 @@
+﻿id,cnpj_administrador,nome_administrador,email_administrador,telefone_administrador,celular_administrador,cep_administrador,endereco_administrador,numero_administrador,complemento_administrador,bairro_administrador,cidade_administrador,estado_administrador,senha_administrador,nivel_acesso
+1,39106584000110,Sr. João Vitor Jesus,marcelasiqueira@example.org,61586716048,43621392622,32548-288,"Estação João Guilherme Jesus, 63",36,Apto 1,Barreiro,Nascimento do Galho,PE,@e0CrI)bTe,1
+2,49531780000195,Stephany Siqueira,santosantonio@example.org,68162891792,16273903968,17283-256,"Recanto Pires, 67",459,,São José,da Rocha de Carvalho,MT,(q9vUQwup_,1
+3,37986014000136,Srta. Olivia da Conceição,oliveiramaria@example.com,41199845737,77590845641,77243-140,"Trecho de Costela, 5",92,Bloco B,Outro,Carvalho,BA,%1m57MUlJ8,1
+4,23546901000189,Levi Nogueira,aparecidamiguel@example.net,46690320485,91167371585,87784-713,"Morro Lorenzo Ramos, 5",39,,Liberdade,Carvalho de da Luz,RN,XO0Try_2&F,1
+5,67358214000105,Nicole Macedo,maria-helena57@example.net,90456077864,71471427606,93676-683,"Estação Costa, 6",586,Bloco B,Casa Branca,da Cruz,RR,6pWHzop)%*,1
+6,31480297000163,Zoe Jesus,davi-luccacunha@example.org,92453506609,08270800819,81591-440,"Chácara de Silva, 38",78,Bloco B,Pantanal,Porto,RR,Q$Ck4Y8d#D,1
+7,94208675000174,Isaac da Mata,ana-lizda-luz@example.org,66882540278,41188096129,71631-078,"Aeroporto Moreira, 55",13,,Cdi Jatoba,Ramos,GO,o2JCwrML(k,1

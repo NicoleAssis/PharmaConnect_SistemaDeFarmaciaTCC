@@ -134,3 +134,10 @@ CREATE TABLE tb_itensvendas (
   FOREIGN KEY (venda_id) REFERENCES tb_vendas(id_venda),
   FOREIGN KEY (produto_id) REFERENCES tb_produto(id_produto)
 );
+SHOW CREATE TABLE tb_administrador;
+
+-- Se necessário, altere o tipo da coluna id para BIGINT
+ALTER TABLE tb_administrador MODIFY id BIGINT AUTO_INCREMENT;
+
+-- Redefina o valor de AUTO_INCREMENT para garantir que não há valores fora do range
+ALTER TABLE tb_administrador AUTO_INCREMENT = 1;
