@@ -26,9 +26,8 @@ namespace TESTE_GUNA.projeto.dao
         {
             this.conexao = new ConnectionFactory().getconnection();
         }
-
         #region Login
-        public bool EfetuarLoginAdministrador(string email, string senha)
+        public bool EfetuarLoginADM(string email, string senha, TelaLogin telaLogin)
         {
             try
             {
@@ -51,50 +50,64 @@ namespace TESTE_GUNA.projeto.dao
                 //Metódo de Leitura
                 if (reader.Read())
                 {
-                    //nivel = reader.GetString("nivel_acesso");
-                    string nome = reader.GetString("nome_administrador");
-                    int nivel = reader.GetInt32(15);
+                    //nivel = reader.GetString("nivel_acesso");              
+                    int nivel = reader.GetInt32(14);
+                  
 
-                    FrmMenu menuCliente = new FrmMenu();
-                    AdmFrmMenu menuAdm = new AdmFrmMenu();
 
-                    if (nivel.Equals(1))
+
+
+                    if (nivel.Equals(2))
                     {
-                        menuAdm.Show();
+                        return false;
 
                     }
+                    else if (nivel.Equals(1))
+                    {
+
+                        return true;
+                    }
+
+
                     return true;
                 }
-                else
-                {
-                    /*
-                    * 
-                    * 
-                    * 
-                    * 
-                    * ADICIONAR FORM SE SENHA OU EMAIL INCORRETOS
-                    * 
-                    * 
-                    * 
-                    * 
-                    * */
+                //else
+                //{
+                //    /*
+                //    * 
+                //    * 
+                //    * 
+                //    * 
+                //    * ADICIONAR FORM SE SENHA OU EMAIL INCORRETOS
+                //    * 
+                //    * 
+                //    * 
+                //    * 
+                //    * */
 
-                    Helpers limparTela = new Helpers();
+                //    window.TelaMessageBox telaMessageBox = new window.TelaMessageBox();
+                //    telaMessageBox.Mensagem("Email ou senha Incorretos!");
+                //    telaMessageBox.ShowDialog();
+
+                //    Helpers limparTela = new Helpers();
 
 
-                    FrmMenu tela = new FrmMenu();
-                    return false;
-                }
+
+                //    FrmMenu tela = new FrmMenu();
+                 return false;
+                //}
 
             }
             catch (Exception erro)
             {
-                System.Windows.Forms.MessageBox.Show("Erro Identificado:" + erro);
+                System.Windows.MessageBox.Show("Aconteceu o erro: " + erro);
                 return false;
+                
             }
 
         }
         #endregion
+
 
         #region CadastroAdministrador1
 

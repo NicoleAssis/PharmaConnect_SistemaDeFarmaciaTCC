@@ -118,6 +118,14 @@ namespace TESTE_GUNA.projeto.window
                 return;
             }
 
+            if (AdministradorDAO.ValidarCNPJ(txtCNPJ.Text) == false)
+            {
+                TelaMessageBox message = new TelaMessageBox();
+                message.Mensagem("Por favor, preencha um CNPJ válido.");
+                message.ShowDialog();
+                return;
+            }
+
             if (txtCelular.Text != "" && txtCNPJ.Text != "" && txtEmail.Text != "" && txtNome.Text != "" && txtSenha.Text != "" )
             {
 

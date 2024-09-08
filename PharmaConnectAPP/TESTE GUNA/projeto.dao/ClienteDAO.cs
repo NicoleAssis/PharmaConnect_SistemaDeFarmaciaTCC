@@ -382,16 +382,9 @@ namespace TESTE_GUNA.projeto.dao
                     string cidade = MyStringConvert(reader[11]);
                     string estado = MyStringConvert(reader[12]);
                     //Testando dados testados do banco
-
-
-                    
-
                     if (nivel.Equals(2))
                     {
                         //Cliente
-                        
-                        
-                        
                         FrmPerfil telaPerfil = new FrmPerfil();
 
                         
@@ -430,31 +423,31 @@ namespace TESTE_GUNA.projeto.dao
 
                     return true;
                 }
-                else
-                {
-                         /*
-                         * 
-                         * 
-                         * 
-                         * 
-                         * ADICIONAR FORM SE SENHA OU EMAIL INCORRETOS
-                         * 
-                         * 
-                         * 
-                         * 
-                         * */
+                //else
+                //{
+                //         /*
+                //         * 
+                //         * 
+                //         * 
+                //         * 
+                //         * ADICIONAR FORM SE SENHA OU EMAIL INCORRETOS
+                //         * 
+                //         * 
+                //         * 
+                //         * 
+                //         * */
 
-                    window.TelaMessageBox telaMessageBox = new window.TelaMessageBox();
-                    telaMessageBox.Mensagem("Email ou senha Incorretos!");
-                    telaMessageBox.ShowDialog();
+                //    window.TelaMessageBox telaMessageBox = new window.TelaMessageBox();
+                //    telaMessageBox.Mensagem("Email ou senha Incorretos!");
+                //    telaMessageBox.ShowDialog();
 
-                    Helpers limparTela = new Helpers();
+                //    Helpers limparTela = new Helpers();
 
 
 
-                    FrmMenu tela = new FrmMenu();
-                    return false;
-                }
+                //    FrmMenu tela = new FrmMenu();
+                return false;
+                //}
                 
             }
             catch (Exception erro)

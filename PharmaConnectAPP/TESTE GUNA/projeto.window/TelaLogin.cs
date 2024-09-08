@@ -56,14 +56,14 @@ namespace TESTE_GUNA.projeto.window
             AdministradorDAO daoADM = new AdministradorDAO();
 
 
-            if (email == "1234" && senha == "1234")
+            if (daoADM.EfetuarLoginADM(email, senha,this))
             {
 
                 AdmTelaHome tela = new AdmTelaHome();
                 tela.Show();
                 this.Hide();
             }
-            else if ((dao.EfetuarLogin(email, senha, this)) || daoADM.EfetuarLoginAdministrador(email, senha))
+            else if ((dao.EfetuarLogin(email, senha, this)))
             {
 
             }
