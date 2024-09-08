@@ -56,7 +56,7 @@ namespace TESTE_GUNA.projeto.window
             AdministradorDAO daoADM = new AdministradorDAO();
 
 
-            if (daoADM.EfetuarLoginADM(email, senha,this))
+            if (daoADM.EfetuarLoginADM(email, senha, this))
             {
 
                 AdmTelaHome tela = new AdmTelaHome();
@@ -67,11 +67,24 @@ namespace TESTE_GUNA.projeto.window
             {
 
             }
+            else
+            {
+
+                window.TelaMessageBox telaMessageBox = new window.TelaMessageBox();
+                telaMessageBox.Mensagem("Email ou senha Incorretos!");
+                telaMessageBox.ShowDialog();
+
+                Helpers limparTela = new Helpers();
+
+
+
+                FrmMenu tela = new FrmMenu();
+            }
 
 
 
 
-        }
+            }
 
         private void txtEmail_Click(object sender, EventArgs e)
         {
