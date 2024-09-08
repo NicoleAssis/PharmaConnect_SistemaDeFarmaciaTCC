@@ -1,3 +1,4 @@
 Para acessar ao projeto se faz necessário adicionar os pacotes NuGet No Visual Studio 2022 abaixo:
  - Guna.
  - MySqlData.
+Os arquivos de bancos foram gerados em CSV então é só importar para o Banco de Dados MySqlWorkbanch 8.0 após crial
